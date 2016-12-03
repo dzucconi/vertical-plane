@@ -21,7 +21,7 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 0;
   letter-spacing: 0.125em;
 }
@@ -35,9 +35,22 @@ body {
   left: 0;
   flex-direction: column;
   justify-content: space-around;
+  overflow: hidden;
 }
 
 .token {}
   .token--selected {
     color: red;
   }
+
+@media (max-width: 640px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 20px;
+  }
+}
